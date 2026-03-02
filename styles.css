@@ -1,0 +1,40 @@
+h1::before {
+  content: "This is decorative 😂 ";
+  background-color: #fef5ef;
+  color: red;
+  text-decoration: solid red underline;
+}
+li:not(.li-four)::after {
+  content: " ★";
+  color: green;
+  font-size: 30px;
+}
+.li-four::after {
+  color: red;
+  content: "   Used :not";
+}
+li {
+  list-style-type: square;
+}
+ul li::marker {
+  color: orange;
+  font-size: 30px;
+}
+li:nth-child(odd) {
+  background-color: orange;
+}
+button {
+  padding: 5px 10px;
+}
+button:hover {
+  background-color: orange;
+}
+/* Target the first child of the ul */
+.list-parent li:first-child {
+  color: red;
+}
+
+/* Target the last child of the ul */
+.list-parent li:last-child {
+  color: blue;
+}
